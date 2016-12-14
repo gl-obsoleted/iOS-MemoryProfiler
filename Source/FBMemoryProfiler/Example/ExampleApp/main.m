@@ -11,7 +11,9 @@
 
 #import <FBAllocationTracker/FBAllocationTracker.h>
 
-#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+//#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+#import <FBRetainCycleDetector/FBAssociationManager.h>
+
 
 int main(int argc, char * argv[]) {
   [FBAssociationManager hook];

@@ -7,8 +7,8 @@
  */
 
 #import "FBSingleRetainCycleViewController.h"
-
-#import <FBRetainCycleDetector/FBObjectiveCGraphElement.h>
+#import <FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h>
+#import <FBRetainCycleDetector/FBRetainCycleUtils.h>
 
 static NSString *const FBRetainCycleSingleLeakIdentifier = @"retain_cycle_single_leak_identifier";
 

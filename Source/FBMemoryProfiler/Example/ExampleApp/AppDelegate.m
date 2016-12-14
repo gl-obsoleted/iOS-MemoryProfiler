@@ -9,8 +9,10 @@
 #import "AppDelegate.h"
 
 #import "CacheCleanerPlugin.h"
-#import "FacebookOpenSourceViewController.h"
+//#import "FacebookOpenSourceViewController.h"
 #import "RetainCycleLoggerPlugin.h"
+
+#import "ViewController.h"
 
 #import <FBMemoryProfiler/FBMemoryProfiler.h>
 
@@ -23,9 +25,11 @@
   
   _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
-  UINavigationController *navigationController =
-  [[UINavigationController alloc] initWithRootViewController:[FacebookOpenSourceViewController new]];
-  _window.rootViewController = navigationController;
+  //UINavigationController *navigationController =
+  //[[UINavigationController alloc] initWithRootViewController:[FacebookOpenSourceViewController new]];
+  //_window.rootViewController = navigationController;
+  UIViewController* uiViewController = [[ViewController alloc] init];
+  _window.rootViewController = uiViewController;
   [_window makeKeyAndVisible];
   
   _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],

@@ -10,8 +10,8 @@
 
 #import "FBMemoryProfilerPresenting.h"
 #import "FBSingleRetainCycleViewController.h"
-
-#import <FBRetainCycleDetector/FBObjectiveCGraphElement.h>
+#import <FBRetainCycleDetector/FBRetainCycleUtils.h>
+#import <FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h>
 
 static NSString *const FBRetainCycleDetectorIdentifier = @"retain_cycle_detector_identifier";
 static NSString *const FBRetainCycleFromMemoryProfilerPerfEvent = @"retain_cycle_detector_memory_profiler_perf";

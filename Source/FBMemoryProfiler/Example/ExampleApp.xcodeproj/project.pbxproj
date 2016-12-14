@@ -13,12 +13,16 @@
 		753B17B01C617AC2007BCC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753B17AF1C617AC2007BCC60 /* Assets.xcassets */; };
 		753B17B31C617AC2007BCC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753B17B11C617AC2007BCC60 /* LaunchScreen.storyboard */; };
 		753B17BC1C62633A007BCC60 /* FacebookProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753B17BB1C62633A007BCC60 /* FacebookProjectViewController.m */; };
-		758C9CE21C63BC3D00E28900 /* FBAllocationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758C9CDF1C63BC3D00E28900 /* FBAllocationTracker.framework */; };
-		758C9CE31C63BC3D00E28900 /* FBMemoryProfiler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758C9CE01C63BC3D00E28900 /* FBMemoryProfiler.framework */; };
-		758C9CE41C63BC3D00E28900 /* FBRetainCycleDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758C9CE11C63BC3D00E28900 /* FBRetainCycleDetector.framework */; };
 		758C9CE81C63BCEA00E28900 /* GithubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 758C9CE71C63BCEA00E28900 /* GithubRepository.m */; };
 		75D21B181C62999A00641ECD /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D21B171C62999A00641ECD /* CacheCleanerPlugin.m */; };
 		75D21B1B1C629A0400641ECD /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D21B1A1C629A0400641ECD /* RetainCycleLoggerPlugin.m */; };
+		D7E279F61E00D2DE00E1AB9A /* FBAllocationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F51E00D2DE00E1AB9A /* FBAllocationTracker.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D7E279FA1E00D2F800E1AB9A /* FBRetainCycleDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F91E00D2F800E1AB9A /* FBRetainCycleDetector.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D7E279FC1E00E10C00E1AB9A /* FBRetainCycleDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F91E00D2F800E1AB9A /* FBRetainCycleDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7E279FD1E00E10F00E1AB9A /* FBMemoryProfiler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F71E00D2EF00E1AB9A /* FBMemoryProfiler.framework */; };
+		D7E279FE1E00E10F00E1AB9A /* FBMemoryProfiler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F71E00D2EF00E1AB9A /* FBMemoryProfiler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7E27A001E00E11200E1AB9A /* FBAllocationTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E279F51E00D2DE00E1AB9A /* FBAllocationTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7E27A031E00E38600E1AB9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E27A021E00E38600E1AB9A /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D7E27A001E00E11200E1AB9A /* FBAllocationTracker.framework in Embed Frameworks */,
+				D7E279FE1E00E10F00E1AB9A /* FBMemoryProfiler.framework in Embed Frameworks */,
+				D7E279FC1E00E10C00E1AB9A /* FBRetainCycleDetector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,15 +53,17 @@
 		753B17B41C617AC2007BCC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753B17BA1C62633A007BCC60 /* FacebookProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookProjectViewController.h; sourceTree = "<group>"; };
 		753B17BB1C62633A007BCC60 /* FacebookProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookProjectViewController.m; sourceTree = "<group>"; };
-		758C9CDF1C63BC3D00E28900 /* FBAllocationTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAllocationTracker.framework; path = "../Carthage/Checkouts/FBAllocationTracker/build/Debug-iphoneos/FBAllocationTracker.framework"; sourceTree = "<group>"; };
-		758C9CE01C63BC3D00E28900 /* FBMemoryProfiler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBMemoryProfiler.framework; path = "../build/Debug-iphoneos/FBMemoryProfiler.framework"; sourceTree = "<group>"; };
-		758C9CE11C63BC3D00E28900 /* FBRetainCycleDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBRetainCycleDetector.framework; path = "../Carthage/Checkouts/FBRetainCycleDetector/build/Debug-iphoneos/FBRetainCycleDetector.framework"; sourceTree = "<group>"; };
 		758C9CE61C63BCEA00E28900 /* GithubRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubRepository.h; sourceTree = "<group>"; };
 		758C9CE71C63BCEA00E28900 /* GithubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubRepository.m; sourceTree = "<group>"; };
 		75D21B161C62999A00641ECD /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
 		75D21B171C62999A00641ECD /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		75D21B191C629A0400641ECD /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		75D21B1A1C629A0400641ECD /* RetainCycleLoggerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCycleLoggerPlugin.m; sourceTree = "<group>"; };
+		D7E279F51E00D2DE00E1AB9A /* FBAllocationTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAllocationTracker.framework; sourceTree = "<group>"; };
+		D7E279F71E00D2EF00E1AB9A /* FBMemoryProfiler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBMemoryProfiler.framework; sourceTree = "<group>"; };
+		D7E279F91E00D2F800E1AB9A /* FBRetainCycleDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBRetainCycleDetector.framework; sourceTree = "<group>"; };
+		D7E27A011E00E38600E1AB9A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7E27A021E00E38600E1AB9A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758C9CE21C63BC3D00E28900 /* FBAllocationTracker.framework in Frameworks */,
-				758C9CE31C63BC3D00E28900 /* FBMemoryProfiler.framework in Frameworks */,
-				758C9CE41C63BC3D00E28900 /* FBRetainCycleDetector.framework in Frameworks */,
+				D7E279FD1E00E10F00E1AB9A /* FBMemoryProfiler.framework in Frameworks */,
+				D7E279F61E00D2DE00E1AB9A /* FBAllocationTracker.framework in Frameworks */,
+				D7E279FA1E00D2F800E1AB9A /* FBRetainCycleDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,8 @@
 		753B17A21C617AC2007BCC60 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7E27A011E00E38600E1AB9A /* ViewController.h */,
+				D7E27A021E00E38600E1AB9A /* ViewController.m */,
 				753B17A61C617AC2007BCC60 /* AppDelegate.h */,
 				753B17A71C617AC2007BCC60 /* AppDelegate.m */,
 				758C9CE61C63BCEA00E28900 /* GithubRepository.h */,
@@ -122,9 +133,9 @@
 		758C9CE51C63BC5900E28900 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				758C9CDF1C63BC3D00E28900 /* FBAllocationTracker.framework */,
-				758C9CE01C63BC3D00E28900 /* FBMemoryProfiler.framework */,
-				758C9CE11C63BC3D00E28900 /* FBRetainCycleDetector.framework */,
+				D7E279F91E00D2F800E1AB9A /* FBRetainCycleDetector.framework */,
+				D7E279F71E00D2EF00E1AB9A /* FBMemoryProfiler.framework */,
+				D7E279F51E00D2DE00E1AB9A /* FBAllocationTracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 			files = (
 				753B17AB1C617AC2007BCC60 /* FacebookOpenSourceViewController.m in Sources */,
 				758C9CE81C63BCEA00E28900 /* GithubRepository.m in Sources */,
+				D7E27A031E00E38600E1AB9A /* ViewController.m in Sources */,
 				753B17A81C617AC2007BCC60 /* AppDelegate.m in Sources */,
 				75D21B181C62999A00641ECD /* CacheCleanerPlugin.m in Sources */,
 				753B17BC1C62633A007BCC60 /* FacebookProjectViewController.m in Sources */,
@@ -312,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

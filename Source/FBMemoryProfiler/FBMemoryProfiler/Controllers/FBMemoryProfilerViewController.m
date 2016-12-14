@@ -25,7 +25,9 @@
 #import "FBRetainCycleAnalysisCache.h"
 #import "FBRetainCyclePresenter.h"
 
-#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+//#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+#import <FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h>
+#import <FBRetainCycleDetector/Detector/FBRetainCycleDetector.h>
 
 static const CGFloat kFBMemoryProfilerRefreshIntervalInSeconds = 3.0;
 
